@@ -1,4 +1,8 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import {AppMainContainer, LeftContainer, RightContainer } from './AppStyle';
+import './tailwind.css';
+
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -19,7 +23,10 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <AppMainContainer>
+          <LeftContainer></LeftContainer>
+          <RightContainer><Component {...pageProps} /></RightContainer>
+        </AppMainContainer>
       </ThemeProvider>
     </>
   )
