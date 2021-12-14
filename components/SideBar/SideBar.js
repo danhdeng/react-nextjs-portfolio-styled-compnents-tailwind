@@ -23,18 +23,34 @@ export const SideBar = () => {
       <Image src="/p.jpg" width="80px" height="100px" alt="Dan Deng"></Image>
       <h3>Dan Deng</h3>
       <p>Full Stack Developer</p>
-      <p>Downlaod Resume</p>
+      <p>Download Resume</p>
       <SocialContainer>
-        <a href="https://www.github.com/danhdeng">
+        <a
+          href="https://www.github.com/danhdeng"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.linkedin.com/in/danhuideng/">
+        <a
+          href="https://www.linkedin.com/in/danhuideng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://dandeng.blogspot.com/">
+        <a
+          href="https://dandeng.blogspot.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaBlogger className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.instagram.com/danhdeng/">
+        <a
+          href="https://www.instagram.com/danhdeng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillInstagram className="w-8 h-8 cursor-pointer text" />{' '}
         </a>
       </SocialContainer>
