@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { SectionProps } from '../../Contants/index';
-export const Section =
-  styled.div <
-  SectionProps >
-  `
+export const Section =styled.div`
   display: ${(props) => (props.grid ? 'grid' : 'flex')};
   flex-direction: ${(props) => (props.row ? 'row' : 'column')};
   padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
@@ -28,9 +25,7 @@ export const Section =
 `;
 
 export const SectionTitle =
-  styled.h2 <
-  SectionProps >
-  `
+  styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? '65px' : '56px')};
   line-height: ${(props) => (props.main ? '72px' : '56px')};
@@ -46,7 +41,7 @@ export const SectionTitle =
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  /* @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? '56px' : '48px')};
     line-height: ${(props) => (props.main ? '56px' : '48px')};
     margin-bottom: 12px;
@@ -61,7 +56,7 @@ export const SectionTitle =
     margin-bottom: 8px;
     padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
     max-width: 100%;
-  }
+  } */
 `;
 
 export const SectionText = styled.p`
@@ -98,7 +93,7 @@ export const SectionDivider = styled.div`
 
   margin: ${(props) => (props.divider ? '4rem 0' : '')};
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  /* @media ${(props) => props.theme.breakpoints.md} {
     width: 48px;
     height: 4px;
   }
@@ -106,7 +101,7 @@ export const SectionDivider = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 32px;
     height: 2px;
-  }
+  } */
 `;
 export const SectionSubText = styled.p`
   max-width: 800px;
