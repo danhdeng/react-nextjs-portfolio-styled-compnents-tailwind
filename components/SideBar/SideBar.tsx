@@ -5,6 +5,11 @@ import {
   GitHubContainer,
   SocialContainer,
   Button,
+  SwitchContainer,
+  SwitchLabel,
+  SwitchLine,
+  SwitchDot,
+  SwitchTheme,
 } from './SideBarStyles';
 import Image from 'next/image';
 import { FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
@@ -54,10 +59,23 @@ export const SideBar = () => {
           <AiFillInstagram className="w-8 h-8 cursor-pointer text" />{' '}
         </a>
       </SocialContainer>
-      <Button onClick={changeTheme}>
-        {/* //TODO remove bg black */}
-        Toggle Theme
-      </Button>
+
+      <SwitchContainer>
+        <SwitchLabel htmlFor="toogleA">
+          <div className="relative">
+            <input
+              id="toogleA"
+              type="checkbox"
+              className="sr-only"
+              onChange={changeTheme}
+            />
+            <SwitchLine></SwitchLine>
+            <SwitchDot></SwitchDot>
+          </div>
+          {/* <div class="ml-3 text-gray-700 font-medium">{theme} theme</div> */}
+          <SwitchTheme>{theme} theme</SwitchTheme>
+        </SwitchLabel>
+      </SwitchContainer>
     </SideBarMainContainer>
   );
 };

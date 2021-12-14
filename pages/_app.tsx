@@ -3,6 +3,7 @@ import { AppMainContainer, LeftContainer, RightContainer } from './AppStyle';
 import '../styles/globals.css';
 import { ThemeProvider } from 'next-themes';
 import { SideBar } from '../components/SideBar/SideBar';
+import type { AppProps } from 'next/app';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,7 +19,7 @@ const theme = {
   },
 };
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <GlobalStyle />

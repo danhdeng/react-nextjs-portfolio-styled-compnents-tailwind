@@ -52,3 +52,43 @@ export const Button = tw.button`
     focus:outline-none 
     hover:scale-105 
 `;
+
+export const SwitchContainer = tw.div`
+    flex 
+    items-center 
+    justify-center 
+    w-full
+    mb-12
+`;
+
+export const SwitchLabel = tw.label`
+    flex 
+    items-center 
+    cursor-pointer
+`;
+export const SwitchLine = tw.div`
+    w-10 
+    h-4 
+    bg-gray-400 
+    rounded-full 
+    shadow-inner
+`;
+
+export const SwitchDot = tw.div`
+    dot 
+    absolute 
+    w-6 
+    h-6 
+    bg-white 
+    rounded-full 
+    shadow 
+    -left-1 
+    -top-1 
+    transition
+`;
+
+export const SwitchTheme = tw.div`
+    ml-3 
+    text-gray-700 
+    font-bold
+`;
