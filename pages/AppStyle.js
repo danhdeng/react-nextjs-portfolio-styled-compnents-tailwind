@@ -1,6 +1,6 @@
 import tw from 'tailwind-styled-components';
 
-export const AppMainContainer=tw.div`
+export const AppMainContainer = tw.div`
     grid 
     grid-cols-12 
     gap-6 
@@ -14,7 +14,8 @@ export const AppMainContainer=tw.div`
     xl:px-48
 `;
 
-export const LeftContainer=tw.div`
+export const LeftContainer = tw.div`
+    flex
     h-full 
     col-span-12 
     p-4 
@@ -26,9 +27,11 @@ export const LeftContainer=tw.div`
     rounded-2xl 
     shadow-custom-light 
     dark:shadow-custom-dark
+    items-center
+    justify-center
 `;
 
-export const RightContainer=tw.div`
+export const RightContainer = tw.div`
     flex 
     flex-col 
     col-span-12 
