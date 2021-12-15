@@ -1,14 +1,14 @@
-import tw, { css } from 'tailwind-styled-components';
-import {NavItemProps} from '../../Types/Types';
+import tw from 'tailwind-styled-components';
+import { NavItemProps } from '../../Types/Types';
 
-export const ListItemContainer=tw.li<NavItemProps>`
+export const ListItemContainer = tw.li<NavItemProps>`
   capitalize 
   cursor-pointer 
   hover:text-green
-  ${(p) => (p.isActive ? "text-green" : "text-black")}
+  ${(p) => (p.$primary ? 'text-green' : 'text-black')}
 `;
 
-export const NavBarContainer=tw.div`
+export const NavBarContainer = tw.div`
   flex 
   px-3 
   py-2 
@@ -17,12 +17,12 @@ export const NavBarContainer=tw.div`
   list-none
 `;
 
-export const ProjectNameContainer=tw.p`
+export const ProjectNameContainer = tw.p`
   my-2
   text-center
 `;
 
-export const ProjectDetailContainer=tw.div`
+export const ProjectDetailContainer = tw.div`
   absolute 
   top-0 
   left-0 
@@ -39,14 +39,14 @@ export const ProjectDetailContainer=tw.div`
   dark:bg-dark-100
 `;
 
-export const ProjectResourceContainer=tw.div`
+export const ProjectResourceContainer = tw.div`
   flex 
   justify-center 
   my-4 
   space-x-3
 `;
 
-export const ProjectAnchorContainer=tw.a`
+export const ProjectAnchorContainer = tw.a`
   flex 
   items-center 
   px-4 
@@ -57,19 +57,19 @@ export const ProjectAnchorContainer=tw.a`
   dark:bg-dark-200
 `;
 
-export const ProjectHeaderTwo=tw.h2`
+export const ProjectHeaderTwo = tw.h2`
   mb-3 
   text-xl 
   font-medium 
   md:text-2xl
 `;
 
-export const ProjectHeaderThree=tw.h3`
+export const ProjectHeaderThree = tw.h3`
   mb-3 
   font-medium
 `;
 
-export const ProjectTagsContainer=tw.div`
+export const ProjectTagsContainer = tw.div`
   flex 
   flex-wrap 
   mt-5 
@@ -78,7 +78,7 @@ export const ProjectTagsContainer=tw.div`
   tracking-wider
 `;
 
-export const ProjectTagSpan=tw.span`
+export const ProjectTagSpan = tw.span`
   px-2 
   py-1 
   my-1 
@@ -87,7 +87,7 @@ export const ProjectTagSpan=tw.span`
   rounde-sm
 `;
 
-export const ProjectSetDetailButton =tw.button`
+export const ProjectSetDetailButton = tw.button`
   absolute 
   p-1 
   bg-gray-200 

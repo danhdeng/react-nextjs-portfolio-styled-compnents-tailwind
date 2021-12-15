@@ -1,5 +1,4 @@
-
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons';
 export interface Service {
   Icon: IconType;
   title: string;
@@ -23,8 +22,7 @@ export interface IProject {
 }
 
 export interface NavItemProps {
-    isActive: boolean;
-  }
-  
+  $primary: boolean;
+}
 
-export type Category = "react" | "node" | "express" | "django" | "mongo";
+export type Category = 'react' | 'node' | 'express' | 'django' | 'mongo';

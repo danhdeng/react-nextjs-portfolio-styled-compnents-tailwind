@@ -10,12 +10,15 @@ import {
   SwitchLine,
   SwitchDot,
   SwitchTheme,
+  EmailMeButton,
+  ContactContainer,
 } from './SideBarStyles';
 import Image from 'next/image';
-import { FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 import { FaBlogger } from 'react-icons/fa';
 import { useTheme } from 'next-themes';
+import { GoLocation } from 'react-icons/go';
 
 export const SideBar = () => {
   const { theme, setTheme } = useTheme();
@@ -35,21 +38,21 @@ export const SideBar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />
+          <AiFillGithub className="w-8 h-8 cursor-pointer" />{' '}
         </a>
         <a
           href="https://www.linkedin.com/in/danhuideng/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />{' '}
         </a>
         <a
           href="https://dandeng.blogspot.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaBlogger className="w-8 h-8 cursor-pointer" />
+          <FaBlogger className="w-8 h-8 cursor-pointer" />{' '}
         </a>
         <a
           href="https://www.instagram.com/danhdeng/"
@@ -59,6 +62,26 @@ export const SideBar = () => {
           <AiFillInstagram className="w-8 h-8 cursor-pointer text" />{' '}
         </a>
       </SocialContainer>
+
+      <a href="mailto:huidh@yahoo.com" className="flex items-center m-2">
+        <FaEnvelope />
+        <p className="ml-2">Email: huidh@yahoo.com</p>
+      </a>
+
+      {/* Contacts */}
+      <ContactContainer style={{ marginLeft: '-1rem', marginRight: '-1rem' }}>
+        <div className="flex items-center justify-center">
+          <GoLocation className="mr-2" /> <span>Toronto,Ontario,Canada </span>
+        </div>
+        <p className="my-2 "> huidh@yahoo.com </p>
+        <p className="my-2"></p>
+      </ContactContainer>
+
+      {/* Email Button */}
+
+      <EmailMeButton onClick={() => window.open('mailto:huidh@yahoo.com')}>
+        Email me
+      </EmailMeButton>
 
       <SwitchContainer>
         <SwitchLabel htmlFor="toogleA">
