@@ -22,21 +22,21 @@ export const AboutContainer = tw.div`
     dark:bg-dark-100 
 `;
 
-const AboutHeaderLevelFour = tw.h4`
+export const AboutHeaderLevelFour = tw.h4`
     my-3 
     text-xl 
     font-semibold 
     tracking-wide
 `;
 
-const AboutServiceContainer = tw.div`
+export const AboutServiceContainer = tw.div`
     grid 
     gap-6 
     my-3 
     md:grid-cols-2
 `;
 
-const ServiceContainer = tw.div`
+export const ServiceContainer = tw.div`
     col-span-2 
     p-2 
     bg-gray-200 
